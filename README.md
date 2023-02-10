@@ -292,3 +292,10 @@ For the eww widget in z0mbi3 rice you need to edit ~/.config/bspwm/scripts/weath
 
 ## Credits
 - [turquoise-hexagon](https://github.com/turquoise-hexagon/fonts), [adi1090x](https://github.com/adi1090x/widgets), [gabrielzschmitz](https://github.com/gabrielzschmitz), [elenapan](https://github.com/elenapan/dotfiles), [rxyhn](https://github.com/rxyhn/bspdots), [okklol](https://github.com/okklol/eww-bar), [ikz87](https://github.com/ikz87).
+
+## Todo:
+- Refactor icons folder
+
+- Refactor betterlockscreen
+
+- Refactor the polybar

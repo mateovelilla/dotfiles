@@ -114,3 +114,8 @@ alias ls='lsd -a --group-directories-first'
 alias ll='lsd -la --group-directories-first'
 
 ~/.local/bin/colorscript -r
+## Start X11
+if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
+  exec startx
+fi
+

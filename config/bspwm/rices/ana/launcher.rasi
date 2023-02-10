@@ -8,19 +8,22 @@
  **/
 
 configuration {
-    show-icons:                 false;
+	modi: 						"drun";
+	icon-theme: 				"Papirus-Dark";
+	application-fallback-icon: 	"Adwaita";
+    show-icons:                 true;
 	drun-display-format:        "{name}";
-	disable-history:                true;
-	sidebar-mode: 					false;
+	disable-history:            true;
+	sidebar-mode: 				false;
 }
 
 /*****----- Global Properties -----*****/
 * {
-    font:                        "JetBrainsMono Nerd Font Bold 10";
-    background:                  #14171c;
-    background-alt:              #14171cE0;
-    foreground:                  #b8bfe5;
-    selected:                    #81ae5f;
+    font:                        "Scientifica 12";
+    background:                  #1A1B26;
+    background-alt:              #1A1B26E0;
+    foreground:                  #c0caf5;
+    selected:                    #7aa2f7;
 }
 
 /*****----- Main Window -----*****/
@@ -31,13 +34,13 @@ window {
     anchor:                      center;
     fullscreen:                  false;
     width:                       500px;
-    height:                      378px;
+    height:                      39%;
     x-offset:                    0px;
     y-offset:                    0px;
 
     /* properties for all widgets */
     enabled:                     true;
-    border-radius:               0px;
+    border-radius:               6px;
     cursor:                      "default";
     background-color:            @background;
 }
@@ -52,8 +55,8 @@ mainbox {
 }
 
 listbox {
-    spacing:                     7px;
-    padding:                     35px;
+    spacing:                     10px;
+    padding:                     10px 5px 10px 5px;
     background-color:            transparent;
     orientation:                 vertical;
     children:                    [ "message", "listview" ];
@@ -87,7 +90,7 @@ entry {
     background-color:            @background-alt;
     text-color:                  inherit;
     cursor:                      text;
-    placeholder:                 "Search Rice!";
+    placeholder:                 "Search";
     placeholder-color:           inherit;
 }
 dummy {
@@ -101,7 +104,6 @@ dummy {
 listview {
     enabled:                     true;
     columns:                     3;
-    lines:                       4;
     cycle:                       false;
     dynamic:                     true;
     scrollbar:                   false;
@@ -110,7 +112,7 @@ listview {
     fixed-height:                true;
     fixed-columns:               true;
     
-    spacing:                     15px;
+    spacing:                     0px;
     background-color:            transparent;
     text-color:                  @foreground;
     cursor:                      "default";
@@ -131,8 +133,14 @@ element normal.normal {
     text-color:                  inherit;
 }
 element selected.normal {
-    background-image: linear-gradient(#1c9ee0, #afa4ec);
+    background-color:            @selected;
     text-color:                  @background;
+}
+element-icon {
+    background-color:            transparent;
+    text-color:                  inherit;
+    size:                        24px;
+    cursor:                      inherit;
 }
 element-text {
     background-color:            transparent;
