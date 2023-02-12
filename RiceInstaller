@@ -69,7 +69,7 @@ logo "Installing needed packages.."
 					 playerctl mpd ncmpcpp ranger mpc picom feh ueberzug \
 					 maim pamixer libwebp webp-pixbuf-loader xorg-xkill papirus-icon-theme \
 					 ttf-jetbrains-mono ttf-jetbrains-mono-nerd ttf-terminus-nerd ttf-inconsolata\
-					 ttf-joypixels pulseaudio neovim-gtk
+					 ttf-joypixels pulseaudio neovim-gtk visual-studio-code-bin
 					 
 	yay -S eww termite xtitle checkupdates-aur betterlockscreen \
 		   nerd-fonts-cozette-ttf scientifica-font --removemake --cleanafter
@@ -78,7 +78,7 @@ clear
 			 
 logo "Cloning Rice!"
 printf "Cloning rice from https://github.com/gh0stzk/dotfiles\n\n"
-git clone --depth=1 https://github.com/gh0stzk/dotfiles.git
+git clone --depth=1 https://github.com/mateovelilla/dotfiles.git
 sleep 2
 clear
 

@@ -298,4 +298,4 @@ For the eww widget in z0mbi3 rice you need to edit ~/.config/bspwm/scripts/weath
 
 - Refactor betterlockscreen
 
-- Refactor the polybar
+- Refactor Grub --> https://github.com/PROxZIMA/boo-grub
